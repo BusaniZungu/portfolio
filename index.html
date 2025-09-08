@@ -3,151 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pibza Nation | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <title>Pibza Nation Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <div class="logo">Pibza Nation</div>
-        <ul>
-          <li><a href="#about" class="active">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">Pibza Nation</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- Hero -->
-    <div class="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Certified Digital Entrepreneur & Interactive Media Developer</p>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="section-bordered hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-content">
+        <h1>Pibza Nation</h1>
+        <p>
+          Multi-Talented Creative Professional: Musician • Web Developer •
+          Content Creator • Film Enthusiast • Producer • Beatmaker
+        </p>
+      </div>
+    </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section-bordered">
       <h2>About Me</h2>
-      <p>
-        Hello! I am Pibza Nation. I specialize in coding, design, and
-        interactive media projects.
-      </p>
       <img
-        src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80"
-        alt="Professional Portrait"
+        src="https://picsum.photos/600/400?random=20"
+        alt="About Image"
+        class="clickable-image"
+        data-text="Extra text about the About section."
       />
+      <p>
+        Born Busani Innocent Zungu in Estcourt, KwaZulu-Natal, Pibza Nation is a
+        rising South African Hip-Hop/Rap artist blending Trap, Afro-Soul, and
+        authentic African rhythms. His journey from humble beginnings to
+        crafting powerful music is a story of resilience, passion, and purpose.
+      </p>
+      <div class="extra-text"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-bordered">
+      <h2>Skills</h2>
+      <img
+        src="https://picsum.photos/600/400?random=30"
+        alt="Skills Image"
+        class="clickable-image"
+        data-text="Here you can learn about my skills."
+      />
+      <div class="skills">
+        <div class="skill">Music Production</div>
+        <div class="skill">Web Development</div>
+        <div class="skill">Content Creation</div>
+        <div class="skill">Beatmaking</div>
+        <div class="skill">Video Editing</div>
+        <div class="skill">Live Performance</div>
+        <div class="skill">Social Media Strategy</div>
+      </div>
+      <div class="extra-text"></div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h2>Portfolio / Work / Skills / Achievements</h2>
+    <section id="portfolio" class="section-bordered">
+      <h2>Portfolio</h2>
       <div class="portfolio-grid">
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=600&q=80"
-            alt="Project 1"
-          />
-          <h3>Project 1</h3>
-          <p>Interactive web design using HTML, CSS, JS.</p>
+        <div class="card" data-text="More info about Project 1">
+          <img src="https://picsum.photos/400/300?random=1" alt="Project 1" />
+          <p>Project 1 description</p>
+          <div class="extra-text"></div>
         </div>
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80"
-            alt="Project 2"
-          />
-          <h3>Project 2</h3>
-          <p>Responsive landing page with animations and Flexbox layout.</p>
+        <div class="card" data-text="More info about Project 2">
+          <img src="https://picsum.photos/400/300?random=2" alt="Project 2" />
+          <p>Project 2 description</p>
+          <div class="extra-text"></div>
         </div>
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
-            alt="Project 3"
-          />
-          <h3>Project 3</h3>
-          <p>
-            Portfolio showcase with smooth scrolling and interactive elements.
-          </p>
+        <div class="card" data-text="More info about Project 4">
+          <img src="https://picsum.photos/400/300?random=4" alt="Project 4" />
+          <p>Project 4 description</p>
+          <div class="extra-text"></div>
         </div>
-      </div>
-
-      <div class="skills">
-        <h3>Skills</h3>
-        <div class="skill">
-          <span>HTML/CSS</span>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width: 90%"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width: 85%"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <span>Graphic Design</span>
-          <div class="skill-bar">
-            <div class="skill-fill" style="width: 80%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="achievements">
-        <h3>Achievements</h3>
-        <ul>
-          <li>Certified Digital Entrepreneur – KZN Film Commission</li>
-          <li>Interactive Media Program – NEMISA</li>
-          <li>Production Manager for multiple media projects</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="portfolio-grid">
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=600&q=80"
-            alt="Project 4"
-          />
-          <h3>Project 4</h3>
-          <p>Interactive landing page with animations.</p>
-        </div>
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
-            alt="Project 5"
-          />
-          <h3>Project 5</h3>
-          <p>Portfolio showcase with responsive design.</p>
+        <div class="card" data-text="More info about Project 5">
+          <img src="https://picsum.photos/400/300?random=5" alt="Project 5" />
+          <p>Project 5 description</p>
+          <div class="extra-text"></div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section-bordered">
       <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
+      <div class="contact-details">
+        <p>
+          <i class="fas fa-envelope"></i> Email:
+          <a href="mailto:pibzanation@gmail.com">pibzanation@gmail.com</a>
+        </p>
+        <p>
+          <i class="fas fa-phone"></i> Phone:
+          <a href="tel:+123456789">+12 345 6789</a>
+        </p>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-      <img
-        src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=600&q=80"
-        alt="Contact image"
-      />
+      <div class="extra-text"></div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Pibza Nation. All Rights Reserved</p>
+      <p>&copy; 2025 Pibza Nation. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
